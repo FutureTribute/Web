@@ -1,0 +1,14 @@
+table {
+    font-size: large;
+    align-content: center;
+}
+
+th {
+    align-content: center;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.34);
+}
+
+td {
+    background-color: #dadada;
+}
