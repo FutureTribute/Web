@@ -1,0 +1,206 @@
+#h1, #w1 >*, #s1 >*, #h1 >* {
+    position: relative;
+}
+
+#h2, #w2 >*, #s2 >*, #h2 >* {
+    position: absolute;
+}
+
+#h3, #w3 >*, #s3 >*, #h3 >* {
+    position: fixed;
+}
+
+.house {
+    width: 700px;
+    height: 700px;
+}
+
+#h1 {
+    top: 10px;
+    left: 10px;
+    background-color: floralwhite;
+}
+
+.roof {
+    width: 0;
+    height: 0;
+    border-right: 300px solid transparent;
+    border-left: 300px solid transparent;
+    border-bottom: 200px solid #b1432f;
+}
+
+#r1 {
+    left: 50px;
+}
+
+.wall {
+    height: 400px;
+    width: 400px;
+    background-color: #67252f;
+}
+
+#w1 {
+    left: 150px;
+}
+
+.second {
+    height: 175px;
+    width: 400px;
+    background-color: transparent;
+}
+
+.balcony_door {
+    width: 100px;
+    height: 100px;
+    background-color: #ecff8b;
+    border: 5px solid black;
+}
+
+#bd1 {
+    left: 145px;
+    top: 30px;
+}
+
+.balcony_fence {
+    width: 300px;
+    height: 50px;
+    border: 5px solid #763b2d;
+    background-image: linear-gradient(to right, #9b6949, #763b2d, #9b6949, #763b2d, #9b6949, #763b2d, #9b6949, #763b2d,
+    #9b6949, #763b2d, #9b6949, #763b2d, #9b6949, #763b2d, #9b6949, #763b2d, #9b6949, #763b2d, #9b6949);
+}
+
+#bf1 {
+    left: 45px;
+}
+
+.window {
+    width: 125px;
+    height: 70px;
+    background-color: #3f947e;
+    display: inline-block;
+    border: 5px solid #4f2727;
+}
+
+#win11 {
+    bottom: 75px;
+    left: 5px;
+}
+
+#win12 {
+    bottom: 75px;
+    left: 120px;
+}
+
+.door {
+    width: 100px;
+    height: 150px;
+    background-color: #ff9150;
+    border: 5px solid black;
+}
+
+#d1 {
+    left: 145px;
+    top: 65px;
+}
+
+.doorhandle {
+    width: 0;
+    height: 0;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+#dh1 {
+    left: 225px;
+    bottom: 100px;
+}
+
+#h2 {
+    top: 820px;
+    left: 10px;
+    background-color: cornsilk;
+}
+
+#r2 {
+    left: 50px;
+}
+
+#w2 {
+    left: 150px;
+    top: 200px;
+}
+
+#bd2 {
+    left: 145px;
+    top: 30px;
+}
+
+#bf2 {
+    left: 45px;
+    bottom: 5px;
+}
+
+#win21 {
+    bottom: 60px;
+    left: 5px;
+}
+
+#win22 {
+    bottom: 60px;
+    left: 259px;
+}
+
+#d2 {
+    bottom: 0;
+    left: 145px;
+}
+
+#dh2 {
+    left: 225px;
+    bottom: 71px;
+}
+
+#h3 {
+    top: 20px;
+    left: 750px;
+    background-color: khaki;
+}
+
+#r3 {
+    left: 800px;
+}
+
+#w3 {
+    left: 900px;
+    top: 220px;
+}
+
+#bd3 {
+    left: 1045px;
+    top: 250px;
+}
+
+#bf3 {
+    left: 945px;
+    top: 330px;
+}
+
+#win31 {
+    top: 480px;
+    left: 905px;
+}
+
+#win32 {
+    top: 480px;
+    left: 1159px;
+}
+
+#d3 {
+    top: 460px;
+    left: 1045px;
+}
+
+#dh3 {
+    left: 1125px;
+    top: 539px;
+}
