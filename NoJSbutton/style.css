@@ -1,0 +1,25 @@
+* {
+    font: 25px Elephant;
+}
+
+div, button {
+    width: 725px;
+    height: 55px;
+    background-color: coral;
+    margin: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#hidden {
+    visibility: hidden;
+    text-align: center;
+}
+
+#button:active {
+    background-color: white;
+}
+
+#button:focus + #hidden {
+    visibility: visible;
+}
+
