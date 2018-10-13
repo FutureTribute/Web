@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    background-color: moccasin;
+}
+
+.square {
+    width: 75px;
+    height: 75px;
+    margin: 7px;
+    padding: 7px;
+    border: 7px dashed;
+}
+
+#sq1 {
+    background-color: black;
+    border-color: red;
+}
+
+#sq2 {
+    background-color: white;
+    border-color: black;
+}
+
+#sq3 {
+    background-color: green;
+    border-color: yellow;
+}
+
+#sq4 {
+    background-color: pink;
+    border-color: blue;
+}
+
+.randomname {
+    margin: 0;
+    height: 50px;
+    width: 250px;
+}
+
+#rn1 {
+    background-color: black;
+}
+
+#rn2 {
+    background-color: red;
+}
+
+#rn3 {
+    background-color: #ffbd15;
+}
+
+.square2 {
+    margin: 20px;
+    padding: 20px;
+}
+
+#high {
+    background-color: darkslategrey;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+#low {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+}
+
+* {
+    color: yellow;
+}
+
+[id*=l2] {
+    color: red;
+}
+
+li:first-child {
+    color: lightskyblue;
+}
+
+[name] {
+    color: magenta;
+}
+
+.lii + li {
+    color: blue;
+}
+#d1 > div {
+    color: lawngreen;
+}
+
+li:hover {
+    color: purple;
+}
