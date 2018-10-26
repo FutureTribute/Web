@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.wrap {
+    padding-bottom: 170px;
+    position: relative;
+}
+
+header {
+    background: black;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    float: left;
+}
+
+header nav {
+    margin: 50px 170px 20px 20px;
+    float: right;
+    word-spacing: 7px;
+}
+
+header nav a {
+    color: white;
+    font-size: 40px;
+    border: white solid 1px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: black;
+    background-color: white;
+}
+
+main {
+    background: rgba(255, 0, 0, 0.50);
+}
+
+.content {
+    text-indent: 25px;
+    max-width: 1000px;
+    text-align: justify;
+    font-size: 30px;
+    background-color:  rgba(255, 0, 0, 0.75);
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+main img {
+    max-width: 250px;
+    border: double black 5px;
+        /*padding: 10px;*/
+    margin: 10px;
+}
+
+#pic1 {
+    float: left;
+}
+
+#pic2 {
+    float: right;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    padding: 20px;
+}
+
+.links {
+    margin-left: 35%;
+}
+
+.links a {
+    display: block;
+}
+
+.links nav {
+    float: left;
+    display: inline-block;
+    padding: 0 3%;
+}
+
+.links nav a {
+    margin-top: 3px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.contacts a {
+    color: white;
+    display: inline-block;
+    float: right;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.links nav a:hover {
+    color: red;
+}
