@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.wrap {
+    padding-bottom: 170px;
+    position: relative;
+}
+
+header {
+    background: black;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    float: left;
+}
+
+header nav {
+    /*margin: 50px 170px 20px 20px;*/
+    margin: 2% 8% 1% 1%;
+    float: right;
+    word-spacing: 7px;
+}
+
+header nav a {
+    color: white;
+    font-size: 40px;
+    border: white solid 1px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: black;
+    background-color: white;
+}
+
+main {
+    background: rgba(255, 0, 0, 0.50);
+}
+
+.content {
+    text-indent: 25px;
+    max-width: 1000px;
+    text-align: justify;
+    font-size: 30px;
+    background-color:  rgba(255, 0, 0, 0.75);
+    margin: 20px auto;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main img {
+    max-width: 250px;
+    border: double black 5px;
+        /*padding: 10px;*/
+    margin: 10px;
+}
+
+#pic1 {
+    float: left;
+}
+
+#pic2 {
+    float: right;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    padding: 20px;
+}
+
+.links {
+    margin-left: 35%;
+}
+
+.links a {
+    display: block;
+}
+
+.links nav {
+    float: left;
+    display: inline-block;
+    padding: 0 3%;
+}
+
+.links nav a {
+    margin-top: 3px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.contacts a {
+    color: white;
+    display: inline-block;
+    float: right;
+    margin: 3px 15px 0 0;
+    text-decoration: none;
+}
+
+.links nav a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 800px){
+    header nav a {
+        float: left;
+        font-size: 30px;
+    }
+
+    .content {
+        font-size: 24px;
+    }
+
+    main img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    header nav a {
+        float: left;
+        /*display: block;*/
+        font-size: 20px;
+    }
+
+    .content {
+        font-size: 18px;
+    }
+
+    main img {
+        max-width: 150px;
+    }
+
+    footer {
+        /*clear: both;*/
+        margin-top: -50px;
+    }
+
+    .links {
+        margin: 0;
+    }
+
+    .links nav {
+        padding: 0 1%;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .links {
+        display: none;
+    }
+
+    .footer-row .logo {
+        width: 100%;
+    }
+
+    .footer-row .logo img {
+        display: block;
+        margin: 0 auto;
+    }
+}
