@@ -114,10 +114,14 @@ footer {
     text-decoration: none;
 }
 
+.contacts {
+    float: right;
+}
+
 .contacts a {
     color: white;
-    display: inline-block;
-    float: right;
+    display: block;
+    /*float: right;*/
     margin: 3px 15px 0 0;
     text-decoration: none;
 }
