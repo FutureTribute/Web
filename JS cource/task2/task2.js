@@ -25,16 +25,22 @@ function isEmpty(obj) {
 }
 
 function toHuman(string) {
+
     let human = [];
     let humanString = "";
-    let stringAsArray = string.split("|");
+
+    let stringAsArray = string.split("   ");
     for (let element in stringAsArray) {
-        for (let key in lib) {
-            if (lib[key] === stringAsArray[element])
-                human.push(key);
+        let stringAsArray2 = stringAsArray[element].split(" ");
+        for (let element2 in stringAsArray2) {
+            for (let key in lib) {
+                if (lib[key] === stringAsArray2[element2])
+                    human.push(key);
+            }
         }
+        human.push(" ");
     }
     for (let i in human)
         humanString += human[i];
-    console.log(humanString);
+    return humanString.trim();
 }
