@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "body-parser": "^1.18.0",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.16.0",
     "fs": "0.0.1-security",
@@ -11,11 +10,10 @@
     "puppeteer": "^1.15.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
-    "rimraf": "latest"
   },
   "main": "app.js",
   "scripts": {
-	"start": "nodemon app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
