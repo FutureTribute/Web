@@ -1,0 +1,17 @@
+input, p {
+    display: inline-block;
+}
+
+label {
+    display: block;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+.page {
+    border: black solid;
+    border-width: 1px 0 0 0;
+    padding-bottom: 20px;
+}

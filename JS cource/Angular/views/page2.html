@@ -1,0 +1,15 @@
+<div class="page">
+    <h1>Page 2</h1>
+    <div ng-controller="Page2Controller">
+        <div>
+            <label>Input number here:&nbsp&nbsp&nbsp<input type="number" ng-model="var2_1" placeholder="input number..."></label>
+            <label>Input number here:&nbsp&nbsp&nbsp<input type="number" ng-model="var2_2" placeholder="input number..."></label>
+        </div>
+        <div>
+            <span>Summary goes here:&nbsp&nbsp&nbsp</span><p ng-bind="var2_1 + var2_2"></p>
+        </div>
+        <div>
+            <span>Multiplication goes here:&nbsp&nbsp&nbsp</span><p ng-bind="var2_1 * var2_2"></p>
+        </div>
+    </div>
+</div>
