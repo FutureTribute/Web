@@ -1,32 +1,31 @@
 const http = require("http");
+const https = require("https");
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const jsonParser = express.json();
 
-http.createServer(app).listen(3000);
+let options = {
+    key: fs.readFileSync('open-ssl certs/localhost.key'),
+    cert: fs.readFileSync('open-ssl certs/localhost.crt')
+};
 
-// app.post("/asd", function(){
-// 	console.log("Server is running");
-// });
+app.use("/js", express.static(__dirname + "/js"));
+app.use("/css", express.static(__dirname + "/css"));
 
-// app.get("/asd", function(req, res) {
-//  console.log(req.body);
-// 	res.status(200).send(req.body);
-//	// res.status(200).send("ASD");
-// })
+http.createServer(app).listen(80);
+https.createServer(options, app).listen(443);
 
-// app.get("/", function(req, res) {
-// 	console.log(req.body);
-// 	res.status(200).send("Hello, world!");
-// })
-
-// app.get("/index", function(req,res){
-// 	console.log(req.body);
-// 	res.status(200).send(fs,readFileSync("index.html"));
-// })
+app.post("/info", jsonParser, function (req, res) {
+    console.log(req.body);
+    if (!req.body) return res.sendStatus(400);
+    let val1 = req.body.value1;
+    let val2 = req.body.value2;
+    res.json({ConcatString: val1 + val2});
+});
 
 app.get("/*", function(req,res){
-	console.log(req.body);
+	console.log(req.url);
 	if (req.url.startsWith("/public/")) {
 		let filePath = req.url.substr(1);
 		fs.readFile(filePath, function(error, data) {
@@ -44,5 +43,7 @@ app.get("/*", function(req,res){
 
 function f404(res) {
 	res.statusCode = 404;
-	res.end("Response not found");
+	res.end("404 Response not found");
 }
+
+// app.get()
