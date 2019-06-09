@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Вес - 20*/
+.class-1 + .cl2 {
+    background: white;
+}
+
+/*Вес - 100*/
+#id * {
+    background: red;
+}
+
+/*100 > 3 - второй селектор приоритетней*/
+
+#task1, #task2, #task3, #task4 {
+    min-height: 200px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+#sq1 {
+    background-color: #44a6ff;
+}
+
+#sq2 {
+    background-color: #528010;
+    left: 50px;
+    top: 50px;
+}
+
+#sq3 {
+    background-color: #ff6438;
+    left: 100px;
+    top: 100px;
+}
+
+#task3 {
+    background-color: gray;
+    overflow: hidden;
+}
+
+.square-2 {
+    height: 100px;
+    width: 100px;
+    /*margin: 0 10px;*/
+}
+
+#sq21 {
+    background-color: blue;
+    top: 500px;
+    float: left;
+}
+
+#sq22 {
+    background-color: green;
+    float: left;
+}
+
+#sq23 {
+    background-color: pink;
+    float: left;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border-bottom: 50px;
+    border-top: 10px;
+    border-right: 25px;
+    border-left: 25px;
+    border-bottom: 60px;
+    border: red solid;
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media (orientation: portrait) {
+
+}
